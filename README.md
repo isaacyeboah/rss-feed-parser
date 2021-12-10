@@ -1,10 +1,10 @@
 ## About 
 
-This is a simple but fun and interactive console command app build with Laravel that accepts an RSS feed, parses it, and stores the relevant data into those two tables.
+This is a simple but fun and interactive console command app build with Laravel that accepts an RSS feed, parses it, and stores the relevant data into the database.
 
 ## Requirements
 
-This app runs Laravel Sail, is a light-weight command-line interface for interacting with Laravel's default Docker development environment which comes some toolings out of the box used in this prject. Example
+This app runs Laravel Sail, is a light-weight command-line interface for interacting with Laravel's default Docker development environment which comes with some toolings out of the box used in this prject. Example
 
 - Redis for running oue queues
 - Mysql as database
@@ -27,7 +27,7 @@ Run the artisan console command which will prompt you for an RSS feed
 `./vendor/bin/sail artisan parser:rss-feed` <br />
 `> Please, specify your rss feed:`
 
-In scenarios when you have larger RSS feeds to process, its recommended to run it as a job by by specifying the `--queue` flag an option to run the parser as like so
+In scenarios when you have larger RSS feeds to process, its recommended to run it as a job by specifying the `--queue` flag an option to run the parser like so
 
 `./vendor/bin/sail artisan parser:rss-feed --queue` <br />
 `> Please, specify your rss feed:`
