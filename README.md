@@ -32,6 +32,9 @@ In scenarios when you have larger RSS feeds to process, its recommended to run i
 `./vendor/bin/sail artisan parser:rss-feed --queue` <br />
 `> Please, specify your rss feed:`
 
+Make sure to start the queue worker in a separate terminal like so
+`./vendor/bin/sail artisan queue:work` <br />
+
 ## Testing
 Configure your .env.testing file by making a copy from .env.example
 
