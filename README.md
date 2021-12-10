@@ -12,10 +12,13 @@ This app runs Laravel Sail, is a light-weight command-line interface for interac
 You will want to use the Laravel Sail instructions to quickly set up a local project [Laravel Sail instructions](https://laravel.com/docs/8.x/installation#getting-started-on-macos)
 
 ## Development
+clone this repository and cd into it
 
 Configure your .env file by making a copy from .env.example
 
 To run migration, use the command `./vendor/bin/sail migrate`.
+
+Now run `./vendor/bin/sail up` to start app server 
 
 ## Usage
 
