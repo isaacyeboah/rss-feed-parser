@@ -25,12 +25,12 @@ Now run `./vendor/bin/sail up` to start app server
 Run the artisan console command which will prompt you for an RSS feed
 
 `./vendor/bin/sail artisan parser:rss-feed` <br />
-`> Please, specify your rss link:`
+`> Please, specify your rss feed:`
 
 In scenarios when you have larger RSS feeds to process, its recommended to run it as a job by by specifying the `--queue` flag an option to run the parser as like so
 
 `./vendor/bin/sail artisan parser:rss-feed --queue` <br />
-`> Please, specify your rss link:`
+`> Please, specify your rss feed:`
 
 ## Testing
 Configure your .env.testing file by making a copy from .env.example
